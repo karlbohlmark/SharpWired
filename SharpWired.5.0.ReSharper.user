@@ -1,0 +1,32 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="85C03311-3C25-4EB5-97BA-FDC6F3C63005/d:Controller/f:FileTransferController.cs" caret="1280" fromTop="22" />
+      <File id="85C03311-3C25-4EB5-97BA-FDC6F3C63005/d:Gui/d:Files/f:FileMenu.cs" caret="1752" fromTop="18" />
+      <File id="85C03311-3C25-4EB5-97BA-FDC6F3C63005/d:Gui/d:Files/f:FilesContainer.cs" caret="2548" fromTop="30" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="85C03311-3C25-4EB5-97BA-FDC6F3C63005/d:Gui/d:Files/f:FilesContainer.cs" caret="2576" fromTop="31" />
+      <File id="85C03311-3C25-4EB5-97BA-FDC6F3C63005/d:Gui/d:Files/f:FileMenu.cs" caret="1711" fromTop="18" />
+      <File id="85C03311-3C25-4EB5-97BA-FDC6F3C63005/d:Controller/f:FileTransferController.cs" caret="1280" fromTop="22" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85C03311-3C25-4EB5-97BA-FDC6F3C63005}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpWired</RootNamespace>
+    <AssemblyName>SharpWired</AssemblyName>
+    <ApplicationIcon>SharpWired_Program_Icon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection\Bookmarks\Bookmark.cs" />
+    <Compile Include="Connection\Commands.cs" />
+    <Compile Include="Connection\ConnectionException.cs" />
+    <Compile Include="Connection\ICommands.cs" />
+    <Compile Include="Connection\Server.cs" />
+    <Compile Include="Connection\Sockets\ConnectionManager.cs" />
+    <Compile Include="Connection\Sockets\SecureSocket.cs" />
+    <Compile Include="Connection\UserInformation.cs" />
+    <Compile Include="Gui\Chat\ChatUserContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Chat\ChatUserContainer.Designer.cs">
+      <DependentUpon>ChatUserContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Transfers\TransferMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MessageEvents\MessageEventArgs.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_200.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_201.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_203.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_300301.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_302310.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_303331332.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_304.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_305309.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_306307.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_308.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_311330.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_320322.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_340.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_341.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_400.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_401.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_402.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_410420.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_411.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_600.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_601.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_602.cs" />
+    <Compile Include="MessageEvents\MessageEventArgs_Messages.cs" />
+    <Compile Include="Gui\SharpWiredForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SharpWiredForm.Designer.cs">
+      <DependentUpon>SharpWiredForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Chat\UserList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Chat\UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageEvents\MessageEventArgs_Path.cs" />
+    <Compile Include="Connection\Messages.cs" />
+    <Compile Include="Model\Messaging\Chat.cs" />
+    <Compile Include="Model\Messaging\ChatMessageItem.cs" />
+    <Compile Include="Model\Users\Group.cs" />
+    <Compile Include="Model\Users\Groups.cs" />
+    <Compile Include="Model\Users\User.cs" />
+    <Compile Include="Model\Users\Privileges.cs" />
+    <Compile Include="Model\Users\UserList.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="SharpWiredMain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Gui\About\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Bookmarks\BookmarkEntryControl.resx">
+      <DependentUpon>BookmarkEntryControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Bookmarks\BookmarkManagerDialog.resx">
+      <DependentUpon>BookmarkManagerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Chat\Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Chat\ChatUserContainer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChatUserContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Files\FolderListing.resx">
+      <DependentUpon>FolderListing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Files\FilesContainer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilesContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Files\Tree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Files\BreadCrumb.resx">
+      <DependentUpon>BreadCrumb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\News\NewsContainer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewsContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SharpWiredForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SharpWiredForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Chat\UserList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Transfers\TransferContainer.resx">
+      <DependentUpon>TransferContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Transfers\TransferItem.resx">
+      <DependentUpon>TransferItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Transfers\TransferList.resx">
+      <DependentUpon>TransferList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Tango22px\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Tango22px\format-justify-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Tango22px\internet-group-chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Tango22px\mail-send-receive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection\Bookmarks\BookmarkManager.cs" />
+    <Compile Include="Connection\HeartBeatTimer.cs" />
+    <Compile Include="Connection\LagHandler.cs" />
+    <Compile Include="Connection\Sockets\BinarySecureSocket.cs" />
+    <Compile Include="Connection\Sockets\DataRecievedEventArgs.cs" />
+    <Compile Include="Connection\Sockets\ValidationException.cs" />
+    <Compile Include="Controller\ChatController.cs" />
+    <Compile Include="Controller\ControllerBase.cs" />
+    <Compile Include="Controller\FileTransferController.cs" />
+    <Compile Include="Gui\Files\FileMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Files\IFilesView.cs" />
+    <Compile Include="Gui\Files\WiredTreeNode.cs" />
+    <Compile Include="Gui\GuiMessageItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Messages\ChatMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Messages\ErrorMessage.cs" />
+    <Compile Include="Gui\Messages\IPrintableHTML.cs" />
+    <Compile Include="Gui\Messages\NewsMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Transfers\TransferContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Transfers\TransferContainer.Designer.cs">
+      <DependentUpon>TransferContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Transfers\TransferItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Transfers\TransferItem.Designer.cs">
+      <DependentUpon>TransferItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Transfers\TransferList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Transfers\TransferList.Designer.cs">
+      <DependentUpon>TransferList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\WebBrowserGuiBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\Errors.cs" />
+    <Compile Include="Controller\FileListingController.cs" />
+    <Compile Include="Controller\GroupController.cs" />
+    <Compile Include="Controller\NewsController.cs" />
+    <Compile Include="Controller\PrivateMessageController.cs" />
+    <Compile Include="Controller\SharpWiredController.cs" />
+    <Compile Include="Controller\UserController.cs" />
+    <Compile Include="Gui\About\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\About\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Bookmarks\BookmarkBackgroundLoader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Bookmarks\BookmarkEntryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Bookmarks\BookmarkEntryControl.Designer.cs">
+      <DependentUpon>BookmarkEntryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Bookmarks\BookmarkManagerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Bookmarks\BookmarkManagerDialog.Designer.cs">
+      <DependentUpon>BookmarkManagerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Chat\Chat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Chat\Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Chat\WiredListViewItem.cs" />
+    <Compile Include="Gui\Files\FolderListing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Files\FolderListing.Designer.cs">
+      <DependentUpon>FolderListing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Files\BreadCrumb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Files\BreadCrumb.Designer.cs">
+      <DependentUpon>BreadCrumb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Files\TransferRequestEventArgs.cs" />
+    <Compile Include="Gui\Files\WiredNodeArgs.cs" />
+    <Compile Include="Gui\Files\FilesContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Files\FilesContainer.Designer.cs">
+      <DependentUpon>FilesContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Files\Tree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Files\Tree.Designer.cs">
+      <DependentUpon>Tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Files\WiredListNode.cs" />
+    <Compile Include="Gui\GuiUtil.cs" />
+    <Compile Include="Gui\News\NewsContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\News\NewsContainer.Designer.cs">
+      <DependentUpon>NewsContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Resources\Icons\IconHandler.cs" />
+    <Compile Include="Gui\Resources\Icons\IconList.cs" />
+    <Compile Include="Gui\SharpWiredGui.cs" />
+    <Compile Include="Gui\SharpWiredGuiBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\Files\File.cs" />
+    <Compile Include="Model\Files\IFile.cs" />
+    <Compile Include="Model\Files\IFolder.cs" />
+    <Compile Include="Model\Files\INode.cs" />
+    <Compile Include="Model\Files\NodeChildren.cs" />
+    <Compile Include="Model\Files\NodeException.cs" />
+    <Compile Include="Model\ModelBase.cs" />
+    <Compile Include="Model\SharpWiredModel.cs" />
+    <Compile Include="Model\Files\FileTree.cs" />
+    <Compile Include="Model\Files\ANode.cs" />
+    <Compile Include="Model\Files\Folder.cs" />
+    <Compile Include="Model\News\News.cs" />
+    <Compile Include="Model\News\NewsMessageItem.cs" />
+    <Compile Include="Model\PrivateMessages\PrivateMessageItem.cs" />
+    <Compile Include="Model\PrivateMessages\PrivateMessageModel.cs" />
+    <Compile Include="Model\Server.cs" />
+    <Compile Include="Model\Transfers\FileTransfer.cs" />
+    <Compile Include="Model\Transfers\FolderTransfer.cs" />
+    <Compile Include="Model\Transfers\ITransfer.cs" />
+    <Compile Include="Model\Transfers\Transfers.cs" />
+    <Compile Include="Model\Users\NickColor.cs" />
+    <Compile Include="SharpWiredClientInfo.cs" />
+    <Compile Include="SingletonException.cs" />
+    <Compile Include="Utils\Pair.cs" />
+    <None Include="Icons\Tango22px\system-log-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="app.config" />
+    <Content Include="SharpWired_Program_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WiredControls\WiredControls.csproj">
+      <Project>{FEC0BECC-B654-4DEE-9919-74F52ECDDC92}</Project>
+      <Name>WiredControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

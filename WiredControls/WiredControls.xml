@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WiredControls</name>
+    </assembly>
+    <members>
+        <member name="T:WiredControls.ToolStripItems.AnimatedLoaderItemResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:WiredControls.ToolStripItems.AnimatedLoaderItemResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:WiredControls.ToolStripItems.AnimatedLoaderItemResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:WiredControls.Containers.Forms.WiredForm">
+            <summary>
+            The base Form class.
+            </summary>
+        </member>
+        <member name="M:WiredControls.Containers.Forms.WiredForm.#ctor">
+            <summary>
+            Creates a WiredForm.
+            </summary>
+        </member>
+        <member name="F:WiredControls.Containers.Forms.WiredForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WiredControls.Containers.Forms.WiredForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WiredControls.Containers.Forms.WiredForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WiredControls.ToolStripItems.AnimatedLoaderItem">
+            <summary>
+            An item in the animated loading menu strip.
+            </summary>
+        </member>
+        <member name="M:WiredControls.ToolStripItems.AnimatedLoaderItem.#ctor(System.String)">
+            <summary>
+            Creates an item with the given text as Text.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:WiredControls.ToolStripItems.AnimatedLoaderItem.#ctor">
+            <summary>
+            Inits components and LoadImages.
+            </summary>
+        </member>
+        <member name="M:WiredControls.ToolStripItems.AnimatedLoaderItem.LoadImages">
+            <summary>
+            Loads the images to use in the animation from resources.
+            </summary>
+        </member>
+        <member name="M:WiredControls.ToolStripItems.AnimatedLoaderItem.SetImage">
+            <summary>
+            Sets the controls Image property with the image specified by ImageIndex.
+            </summary>
+        </member>
+        <member name="M:WiredControls.ToolStripItems.AnimatedLoaderItem.InitializeComponent">
+            <summary>
+            You know the drill.
+            </summary>
+        </member>
+        <member name="M:WiredControls.ToolStripItems.AnimatedLoaderItem.imageChangeTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            When the animation timer ticks, this is what we do. We increase ImageIndex by one.
+            </summary>
+            <param name="sender">.</param>
+            <param name="e">Empty I guess.</param>
+        </member>
+        <member name="M:WiredControls.ToolStripItems.AnimatedLoaderItem.Start">
+            <summary>
+            Starts the controls animation.
+            </summary>
+        </member>
+        <member name="M:WiredControls.ToolStripItems.AnimatedLoaderItem.Stop">
+            <summary>
+            Stop the animation timer.
+            </summary>
+        </member>
+        <member name="P:WiredControls.ToolStripItems.AnimatedLoaderItem.ImageIndex">
+            <summary>
+            Get/Set the current image index used.
+            </summary>
+        </member>
+    </members>
+</doc>
